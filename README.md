@@ -11,7 +11,8 @@ The basis of this project was to practice and exhibit basic creation of a neural
 ## Data Interpretation
 The confusion matrix shows correlation between distinct features. This allows me to discern which features relate most the the models score, and how they interact with eachother.
 
-![image](https://github.com/user-attachments/assets/8689df09-e728-44f3-8959-d9186f51bfa8)
+![image](https://github.com/user-attachments/assets/d59bee05-3443-46e4-8158-80dff9d50e95)
+
 
 The r vs. i shows a high correlation. This is because r is the red filter displayed in the photometric system, and i is the infared filter in the photometric system.
 The matrix also shows a redshift correlation in the quasar class specifically. Redshifts in quasars are measured due to the strong spectral lines in their ultraviolet emmision spectrum. This correlation is very good as it creates a strong connection between redshifts and quasars, which will help the model understand that class better. 
