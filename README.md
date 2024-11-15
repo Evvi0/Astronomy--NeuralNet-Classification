@@ -3,6 +3,19 @@ A Neural Network Model
 ## Summary:
 The basis of this project was to practice and exhibit basic creation of a neural network using a dataset about one of my most loved aspirations which is astronomy. The dataset depicts image information about celestial bodies that are either classified as a quasar, star or galaxy. I will do a continuation of this project that will undergo the classification using the images themselves, rather than the data collected on them, and test which one poses a higher AUC Score. What adds complexity to this model is the usage of 3 output classes.
 
+## Depiction of Columns
+
+![image](https://github.com/user-attachments/assets/3f3c4b1f-cef6-4a06-b618-afbba9fa0b6c)
+
+
+## Data Interpretation
+The confusion matrix shows correlation between distinct features. This allows me to discern which features relate most the the models score, and how they interact with eachother.
+
+![image](https://github.com/user-attachments/assets/8689df09-e728-44f3-8959-d9186f51bfa8)
+
+The r vs. i shows a high correlation. This is because r is the red filter displayed in the photometric system, and i is the infared filter in the photometric system.
+The matrix also shows a redshift correlation in the quasar class specifically. Redshifts in quasars are measured due to the strong spectral lines in their ultraviolet emmision spectrum. This correlation is very good as it creates a strong connection between redshifts and quasars, which will help the model understand that class better. 
+
 ## Techniques
 For the model, I built my own neural network which was equally deep than it is wide. Data prep was crucial as the classes needed to be split up using dummies, to give each class a one hot encoded style. This allowed for an easy train test split and a 3 neuron, dense output layer.
 
